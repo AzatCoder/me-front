@@ -1,0 +1,23 @@
+route = [
+  {
+    props: [
+      files: [
+        hello!
+        onOpen: () => open([0, 0])
+      ]
+    ]
+  }
+]
+
+name = [0, files, hello]
+
+
+
+route = {
+  files: [
+    name
+  ],
+  sendmemessage: {
+    
+  }
+}

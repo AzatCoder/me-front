@@ -1,0 +1,42 @@
+// @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  outline: none;
+}
+
+body {
+  background: #007b7b;
+  margin: 0;
+  width: 100vh;
+  overflow: hidden;
+}
+
+
+$main-color: #bdbdbd;
+$select-color: blue;
+$border-light: rgb(224, 224, 224);
+$border-dark: #121212;
+
+@mixin inner-window {
+  height: calc(100% - 24px);
+}
+
+@mixin border($size) {
+  border-top: #{$size} solid $border-light;
+  border-left: #{$size} solid $border-light;
+  border-bottom: #{$size} solid $border-dark;
+  border-right: #{$size} solid $border-dark;
+}
+
+@mixin active-border($size) {
+  border-top: #{$size} solid $border-dark;
+  border-left: #{$size} solid $border-dark;
+  border-bottom: #{$size} solid $border-light;
+  border-right: #{$size} solid $border-light;
+}
