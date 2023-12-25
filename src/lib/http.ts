@@ -7,7 +7,10 @@ export const post = <T>(input: RequestInfo | URL, params: Record<string, any>) =
   input,
   {
     method: 'POST',
-    body: String(params),
-    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params),
+    headers: { 
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
   }
 );

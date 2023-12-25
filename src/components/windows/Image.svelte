@@ -13,11 +13,6 @@
 </Window>
 
 <style lang='scss'>
-  .image-window:empty {
-    width: 100px;
-    height: 100px;
-  }
-
   .image_img {
     max-width: 80vw;
     max-height: 80vh;
